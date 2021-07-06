@@ -67,7 +67,6 @@ class BottomFragment : Fragment(), View.OnClickListener {
         binding.buttonModulus.setOnClickListener(this)
         binding.buttonRoot.setOnClickListener(this)
         binding.buttonClear.setOnClickListener(this)
-        binding.buttonClearRecent.setOnClickListener(this)
         binding.buttonEqual.setOnClickListener(this)
     }
 
@@ -75,8 +74,8 @@ class BottomFragment : Fragment(), View.OnClickListener {
         var whichButton = ""
 
         when(view?.id) {
-            R.id.button0 -> {
-                whichButton = "0"
+            R.id.buttonDecimal -> {
+                whichButton = "."
             }
             R.id.button1 -> {
                 whichButton = "1"
@@ -105,8 +104,8 @@ class BottomFragment : Fragment(), View.OnClickListener {
             R.id.button9 -> {
                 whichButton = "9"
             }
-            R.id.buttonDecimal -> {
-                whichButton = "."
+            R.id.button0 -> {
+                whichButton = "0"
             }
             R.id.buttonPlus -> {
                 whichButton = "+"

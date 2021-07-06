@@ -12,9 +12,9 @@
     <item name="buttonMinus" type="id" />
     <item name="button2" type="id" />
     <item name="buttonRoot" type="id" />
-    <item name="button0" type="id" />
-    <item name="buttonMultiply" type="id" />
     <item name="buttonDecimal" type="id" />
+    <item name="buttonMultiply" type="id" />
+    <item name="button0" type="id" />
     <item name="button3" type="id" />
     <item name="buttonEqual" type="id" />
     <item name="buttonClear" type="id" />

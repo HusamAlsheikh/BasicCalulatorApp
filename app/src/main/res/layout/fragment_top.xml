@@ -10,20 +10,19 @@
     <EditText
         android:id="@+id/editTextCalc"
         android:layout_width="350dp"
-        android:layout_height="70dp"
-        android:background="@drawable/edit_text_background"
+        android:layout_height="100dp"
         android:clickable="false"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:importantForAutofill="no"
         android:inputType="none"
+        android:longClickable="false"
         android:padding="15dp"
         android:singleLine="true"
-        android:textSize="28sp"
-        android:focusableInTouchMode="false"
-        android:longClickable="false"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EqualButton" parent="TextAppearance.AppCompat">
+        <item name="android:colorBackground">#c41442</item>
+    </style>
+</resources>
