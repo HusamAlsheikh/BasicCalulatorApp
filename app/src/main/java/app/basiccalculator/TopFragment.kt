@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import app.basiccalculator.databinding.FragmentTopBinding
+import kotlinx.android.synthetic.main.fragment_top.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -42,7 +43,45 @@ class TopFragment : Fragment() {
         binding = FragmentTopBinding.bind(view)
     }
 
+    fun setDisplay(str : String) {
+        var ops = arrayOf<String>("+", "-", "x", "÷", "%", "√", "%", ".")
+        var line = binding.editTextCalc.text.toString()
 
+        if(str in ops){
+            if(line.isEmpty()){ //  If line is empty, allow operator
+                line = "$line$str"
+            }
+            else if(line[line.length - 1] == '√' && str == "√"){    //  If previous character is root, and current operator is root, allow current operator
+                line = "$line$str"
+            }
+            else if(line[line.length - 1] == '-' && str == "-"){    //  If previous character is minus, and current operator is minus, allow current operator
+                line = "$line$str"
+            }
+            else if(line[line.length - 1].toString() !in ops) {     //  If previous character is operator, do not allow any other operator
+                line = "$line$str"
+            }
+        }
+        else if(str == "c"){    //  If current operator is clear, clear line
+            line = ""
+        }
+        else if(str == "ce"){   //  If current operator is clear previous, clear previous character
+            if(line.isNotEmpty()){
+                line = line.substring(0, line.length - 1)
+            }
+        }
+        else if(str == "="){    //  If current operator is equals, calculate result
+
+        }
+        else{   //  Otherwise add character
+            line = "$line$str"
+        }
+
+        binding.editTextCalc.setText(line)
+
+        binding.editTextCalc.setSelection(editTextCalc.text.length)
+
+        // Log.i("setDisplayFunction: ", "$line")
+    }
 
     companion object {
         /**

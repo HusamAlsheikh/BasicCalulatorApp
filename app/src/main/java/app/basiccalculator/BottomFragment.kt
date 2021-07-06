@@ -11,7 +11,7 @@ import app.basiccalculator.databinding.FragmentBottomBinding
 class BottomFragment : Fragment(), View.OnClickListener {
     private lateinit var binding : FragmentBottomBinding
 
-    var activityCallback :BottomFragment.BottomListener? = null
+    var activityCallback : BottomListener? = null
 
     interface BottomListener {
         fun onButtonClick(button: String)

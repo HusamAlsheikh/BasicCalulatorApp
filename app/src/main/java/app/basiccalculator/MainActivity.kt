@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity(), BottomFragment.BottomListener {
     override fun onButtonClick(button: String){
         val displayTextView = supportFragmentManager.findFragmentById(R.id.topFragment) as TopFragment
 
+        displayTextView.setDisplay(button)
     }
 }

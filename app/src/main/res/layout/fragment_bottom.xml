@@ -226,7 +226,7 @@
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:text="X"
+        android:text="x"
         app:layout_constraintBottom_toTopOf="@+id/buttonDivide"
         app:layout_constraintEnd_toStartOf="@+id/button1"
         app:layout_constraintHorizontal_bias="0.5"
