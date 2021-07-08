@@ -3,4 +3,7 @@
     <style name="EqualButton" parent="TextAppearance.AppCompat">
         <item name="android:colorBackground">#c41442</item>
     </style>
+    <style name="Numbers" parent="TextAppearance.AppCompat">
+        <item name="android:colorBackground">#FaFaFa</item>
+    </style>
 </resources>
